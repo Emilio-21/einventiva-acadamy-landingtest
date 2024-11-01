@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import Hero from '../components/Hero.astro';
+import AboutUs from '../components/AboutUs.astro';
+import Services from '../components/Services.astro';
+import Courses from '../components/Courses.astro';
+import Clients from '../components/Clients.astro';
+import ContactForm from '../components/ContactForm.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Plataforma de Cursos Online">
+  <Navigation />
+  <Hero />
+  <div id="about">
+    <AboutUs />
+  </div>
+  <div id="services">
+    <Services />
+  </div>
+  <Courses />
+  <div id="clients">
+    <Clients />
+  </div>
+  <ContactForm />
+  <Footer />
+</Layout>

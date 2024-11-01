@@ -1,0 +1,76 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-gray-900 text-white py-12">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+        <h3 class="text-xl font-bold mb-4">Contacto</h3>
+        <ul class="space-y-2">
+          <li>
+            <a href="mailto:info@ejemplo.com" class="hover:text-primary transition-colors">
+              info@ejemplo.com
+            </a>
+          </li>
+          <li>
+            <a href="tel:+123456789" class="hover:text-primary transition-colors">
+              +1 (234) 567-89
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold mb-4">Legal</h3>
+        <ul class="space-y-2">
+          <li>
+            <a href="/privacidad" class="hover:text-primary transition-colors">
+              Aviso de Privacidad
+            </a>
+          </li>
+          <li>
+            <a href="/terminos" class="hover:text-primary transition-colors">
+              Términos y Condiciones
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold mb-4">Redes Sociales</h3>
+        <ul class="space-y-2">
+          <li>
+            <a href="#" class="hover:text-primary transition-colors">Facebook</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-primary transition-colors">Twitter</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-primary transition-colors">Instagram</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-primary transition-colors">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold mb-4">Newsletter</h3>
+        <form class="space-y-4">
+          <input
+            type="email"
+            placeholder="Tu email"
+            class="w-full px-4 py-2 rounded-md text-gray-900"
+          />
+          <button
+            type="submit"
+            class="w-full bg-primary hover:bg-secondary text-white font-bold py-2 px-4 rounded-md transition-colors"
+          >
+            Suscribirse
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+      <p>&copy; {currentYear} Tu Empresa. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>

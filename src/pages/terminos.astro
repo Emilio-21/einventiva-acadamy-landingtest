@@ -1,0 +1,52 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Términos y Condiciones">
+  <div class="container mx-auto px-4 py-12">
+    <h1 class="text-4xl font-bold mb-8">Términos y Condiciones</h1>
+    
+    <div class="prose max-w-none">
+      <p class="mb-4">Última actualización: {new Date().toLocaleDateString()}</p>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">1. Aceptación de los Términos</h2>
+      <p class="mb-4">
+        Al acceder y utilizar esta plataforma, usted acepta estos términos y condiciones en su totalidad.
+      </p>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">2. Uso de la Plataforma</h2>
+      <p class="mb-4">
+        Usted se compromete a:
+      </p>
+      <ul class="list-disc ml-8 mb-4">
+        <li>No usar la plataforma con fines ilegales</li>
+        <li>No compartir sus credenciales de acceso</li>
+        <li>No copiar o distribuir el contenido sin autorización</li>
+        <li>Mantener la confidencialidad de su cuenta</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">3. Propiedad Intelectual</h2>
+      <p class="mb-4">
+        Todo el contenido de la plataforma está protegido por derechos de autor y otras leyes de propiedad intelectual.
+      </p>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">4. Política de Reembolso</h2>
+      <p class="mb-4">
+        Ofrecemos un período de reembolso de 30 días para todos nuestros cursos si no está satisfecho con el contenido.
+      </p>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">5. Modificaciones</h2>
+      <p class="mb-4">
+        Nos reservamos el derecho de modificar estos términos en cualquier momento. Los cambios entrarán en vigor inmediatamente después de su publicación.
+      </p>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">6. Contacto</h2>
+      <p class="mb-4">
+        Para cualquier consulta sobre estos términos, contáctenos en:
+        <a href="mailto:legal@ejemplo.com" class="text-primary hover:text-secondary">legal@ejemplo.com</a>
+      </p>
+    </div>
+  </div>
+  <Footer />
+</Layout>

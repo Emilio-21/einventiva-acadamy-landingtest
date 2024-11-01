@@ -1,0 +1,48 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Aviso de Privacidad">
+  <div class="container mx-auto px-4 py-12">
+    <h1 class="text-4xl font-bold mb-8">Aviso de Privacidad</h1>
+    
+    <div class="prose max-w-none">
+      <p class="mb-4">Última actualización: {new Date().toLocaleDateString()}</p>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">1. Información que Recopilamos</h2>
+      <p class="mb-4">
+        Recopilamos información que usted nos proporciona directamente cuando:
+      </p>
+      <ul class="list-disc ml-8 mb-4">
+        <li>Se registra en nuestra plataforma</li>
+        <li>Realiza una compra</li>
+        <li>Se suscribe a nuestro newsletter</li>
+        <li>Contacta con nuestro servicio de atención al cliente</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">2. Uso de la Información</h2>
+      <p class="mb-4">
+        Utilizamos la información recopilada para:
+      </p>
+      <ul class="list-disc ml-8 mb-4">
+        <li>Proporcionar y mantener nuestros servicios</li>
+        <li>Procesar sus transacciones</li>
+        <li>Enviar información sobre nuestros servicios</li>
+        <li>Mejorar nuestros servicios</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">3. Protección de Datos</h2>
+      <p class="mb-4">
+        Implementamos medidas de seguridad para proteger su información personal contra acceso, alteración, divulgación o destrucción no autorizada.
+      </p>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4">4. Contacto</h2>
+      <p class="mb-4">
+        Si tiene preguntas sobre este Aviso de Privacidad, contáctenos en:
+        <a href="mailto:privacy@ejemplo.com" class="text-primary hover:text-secondary">privacy@ejemplo.com</a>
+      </p>
+    </div>
+  </div>
+  <Footer />
+</Layout>
